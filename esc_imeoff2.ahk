@@ -1,5 +1,7 @@
 ﻿;vimで使うノーマルモードに戻る時にIMEをオフにする
 Ctrl & [:: Send, {Esc} {vk1Dsc07B}
+;Ctrl + Spaceでもノーマルモードに戻れるようにする
+Ctrl & vk20sc039:: Send, {Esc} {vk1Dsc07B}
 
 ;vim系移動を模す
 vk1Dsc07B & h:: Send, {Left}
@@ -17,4 +19,3 @@ vk1Dsc07B & vk1Csc079:: Send, {vk1Dsc07B}
 
 ;閉じる
 vk1Dsc07B & q:: Send, !{F4}
-
